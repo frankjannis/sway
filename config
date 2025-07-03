@@ -14,7 +14,7 @@ set $right l
 set $term alacritty
 set $browser firefox
 set $menu wmenu-run
-set $background /home/jannis/Pictures/Wallpapers/1363709.png
+set $background ~/.config/sway/wallpapers/1363709.png
 set $lock swaylock -c 000000
 
 
