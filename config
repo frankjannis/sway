@@ -13,6 +13,7 @@ set $right l
 
 set $term alacritty
 set $browser firefox
+set $explorer $term -e yazi
 set $menu wmenu-run
 set $background ~/.config/sway/wallpapers/1363709.png
 set $lock swaylock -c 000000
@@ -81,9 +82,13 @@ input * {
 #
     # Start a terminal
     bindsym $mod+Return exec $term
+    bindsym $mod+x exec $term
 
     # Start the browser
-    bindsym $mod+i exec $browser
+    bindsym $mod+c exec $browser
+
+    # Start the explorer
+    bindsym $mod+y exec $explorer
 
     # Kill focused window
     bindsym $mod+q kill
