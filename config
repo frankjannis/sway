@@ -13,7 +13,7 @@ set $right l
 
 set $term alacritty
 set $browser firefox
-set $explorer $term -e yazi
+set $explorer $term -e fish -c 'y'
 set $menu wmenu-run
 set $background ~/.config/sway/wallpapers/1363709.png
 set $lock swaylock -c 000000
