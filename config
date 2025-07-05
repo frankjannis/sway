@@ -11,13 +11,13 @@ set $down j
 set $up k
 set $right l
 
-set $term alacritty msg create-window
+set $term kitty
 set $browser firefox
+# Capital -C makes the term persistent. (q only exits $explorer)
 set $explorer $term -e fish -C 'y'
 set $menu wmenu-run
 set $background ~/.config/sway/wallpapers/1363709.png
 set $lock swaylock -c 000000
-
 
 set $cl_high #009ddc
 set $cl_indi #d9d8d8
@@ -94,6 +94,9 @@ input * {
 
     # Start your launcher
     bindsym $mod+d exec $menu
+
+    # Start btop
+    bindsym $mod+less exec $term -e btop
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
